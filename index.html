@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covid API</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.2/axios.min.js"
+      integrity="sha512-SRGf0XYPMWMGCYQg7sQsW2/FMWq0L/mYhwxDraoUOeZ9sWO2/+R48bcXZaWOpwjCQbyRWP24zsbtqQxJXU1W2w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <div class="select">
+      <select name="country" id="selectCountry" onChange="updateCountry()">
+        <option value="Bangladesh">Bangladesh</option>
+        <option selected value="India">India</option>
+        <option value="USA">USA</option>
+        <option value="Brazil">Brazil</option>
+      </select>
+    </div>
+
+    <div class="select">
+      <div>Cases : <span id="cases"></span></div>
+    </div>
+  </body>
+</html>
